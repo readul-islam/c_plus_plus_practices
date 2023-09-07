@@ -1,19 +1,20 @@
+#include <string.h>
 #include <iostream>
+
 using namespace std;
 
-bool validAnagram(string text) {
+bool validAnagram(string text1, string text2) {
 
-   string revString = "";
-   int len = text.length() - 1;
-
-   for (int i = len; i >= 0; i--) {
-      revString+=text[i];
-      cout << revString << endl;
+   if (text1.length() != text2.length()) {
+      return 0;
    }
+
+   
 }
 
 int main() {
-   string name = "test";
+   string name1 = "test";
+   string name2 = "estt";
 
-   validAnagram(name);
+   validAnagram(name1, name2);
 }
