@@ -19,13 +19,19 @@ using namespace std;
 // global variable
 int global = 5;
 
+void dummy (int x){
+   x = x/2;
+   cout << x << endl;
+};
+
 int main() {
    // local variables
    int global = 10;
    int i;            // variable declaration
    i = 0;            // variable initialization
    int sum = 2 + 3;  // variable definitition
-
+   dummy(global);
+   cout << global <<endl;
    cout <<"local variable "<< global << endl;
    cout << "global variable " << ::global;
 }
