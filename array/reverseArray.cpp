@@ -10,17 +10,19 @@ int main() {
    int temp;
 
    while (start <= end) {
-      for (int i = 0; i < size; i++) {
-         cout << arr[i] << " ";
-      }
+
       cout << endl;
-      temp = arr[start];
-      arr[start] = arr[end];
-      arr[end] = temp;
+      swap(arr[start], arr[end]); // same functionality as below;
+      //   temp = arr[start];
+      //   arr[start] = arr[end];
+      //   arr[end] = temp;
 
       start++;
       end--;
    }
+    for (int i = 0; i < size; i++) {
+         cout << arr[i] << " ";
+      }
 
    return 0;
 }
