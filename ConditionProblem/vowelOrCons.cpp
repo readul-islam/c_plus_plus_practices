@@ -11,6 +11,15 @@ bool isVowel(char ch) {
    return 0;
 }
 
+bool isVowel1(char ch) {
+
+   string vowel = "aeiouAEIOU";
+ return (vowel.find(ch) != string::npos);
+  
+
+   return 0;
+}
+
 int main() {
 
    char character;
@@ -21,6 +30,11 @@ int main() {
    } else {
       cout << character << " is  Constant" << endl;
    }
-
+   if ( isVowel1(character)) {
+      cout << character << " is Vowel" << endl;
+   } else {
+      cout << character << " is  Constant" << endl;
+   }
+  
    return 0;
 }
