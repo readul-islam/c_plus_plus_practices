@@ -1,3 +1,6 @@
+
+// find key in sorted array
+// if exist return index else return -1
 #include <iostream>
 using namespace std;
 
